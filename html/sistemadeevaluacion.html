@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Evaluación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sistema de Evaluación</h1>
+
+    <div id="videoContainer">
+        <h2>Video</h2>
+        <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id="preguntaContainer">
+        <h2>Pregunta</h2>
+        <p>¿Cuál es la respuesta correcta?</p>
+
+        <label>
+            <input type="radio" name="opcion" value="opcion1"> Opción 1
+        </label>
+        <label>
+            <input type="radio" name="opcion" value="opcion2"> Opción 2
+        </label>
+        <label>
+            <input type="radio" name="opcion" value="opcion3"> Opción 3
+        </label>
+        <label>
+            <input type="radio" name="opcion" value="opcion4"> Opción 4
+        </label>
+
+        <button onclick="verificarRespuesta()">Verificar Respuesta</button>
+    </div>
+
+    <script src="sistemadeevaluacion.js"></script>
+</body>
+</html>

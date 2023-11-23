@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Usuarios</title>
+    <link rel="stylesheet" href="../css/gestiondeusuarios.css">
+    <script src="../js/crudusuarios.js"></script>
+    <script src="../js/usuarios.js"></script>
+</head>
+
+<body>
+    <nav>
+        <h1 id="ti">EduCecar</h1>
+    </nav>
+
+    <h1 id="ti">Gestion de Usuario</h1>
+    <div class="divPa">
+        <div class="divHijo1">
+            <label>Primer Nombre:</label> <input type="text" id="nombre1" pattern="[A-Za-z]+" required> <br><br>
+            <label>Segundo Nombre:</label> <input type="text" id="nombre2" pattern="[A-Za-z]+" required><br><br>
+            <label>Primer Apellido:</label> <input type="text" id="apellido1" pattern="[A-Za-z]+" required><br><br>
+            <label>Segundo Apellido:</label> <input type="text" id="apellido2" pattern="[A-Za-z]+" required><br><br>
+            <label>Tipo de Identificacion:</label>
+            <select id="tipoID" required>
+                <option value=""></option>
+                <option value="CC">CC</option>
+                <option value="TI">TI</option>
+                <option value="CE">CE</option>
+                <option value="P">P</option>
+            </select><br><br>
+
+        <label> Numero de Identificacion:</label> <input type="number" id="numeroID"><br><br>
+        <label> Direccion de residencia:</label> <input type="text" id="direccion"> <br><br>
+        </div>
+        <div class="divHijo2">
+            
+            <label>Fecha de nacimiento: </label><input type="date" id="fechaN"><br><br>
+            <label for="estudiosrealizados">Estudios realizados:</label>
+            <select id="estudios" name="estudios">
+                <option value="" disabled selected>Selecciona una opcion:</option>
+            <option value="pregrado">Pregrado</option>
+            <option value="posgrado">Posgrado</option>
+            <option value="certificacion">Certificación</option>
+            <option value="FormacionTecnica">Formacion Tecnica</option>
+            <option value="doctorado">Doctorado</option>
+            <option value="diploma">Diplomado</option>
+            </select> <br><br>
+        <label>Tipo:</label><select id="tipo" required>
+                <option value=""></option>
+                <option value="admin">Administrador</option><br><br>
+                <option value="instructor">Instructor</option><br><br>
+                <option value="estudiante">Estudiante</option>
+            </select><br><br>
+            <label>Correo Electronico: </label> <input type="email" id="correo" required><br><br>
+            <label>Usuario: </label><input type="text" id="usuario" required><br><br>
+            <label> Password:</label> <input type="password" id="password" required>
+        </div>
+    </div>
+    <div class="botones"> 
+    <button onclick="insertar()" style="background-color: yellow;">Guardar</button>
+    <button onclick="actualizar()" style="background-color: blue;">Actualizar</button>
+    <button onclick="eliminar()" style="background-color: red;">Eliminar</button>
+    <button onclick="consultar()" style="background-color: blueviolet;">Consultar</button>
+</div>
+
+<button><a href="iniciodesesion.html" target="_blank">Avanzar</a></button>
+</body>
+
+</html>

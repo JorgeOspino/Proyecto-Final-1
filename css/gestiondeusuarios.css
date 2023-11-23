@@ -1,0 +1,33 @@
+body{
+    background-color: green;
+}
+nav{
+    height: 50px;
+    background-color: rgb(127, 157, 255);
+    margin-top: -15px;
+}
+#ti{
+    color: white;
+    text-align: center;
+    
+}
+.divPa{
+    display: flex;
+}
+.divHijo1{
+    width: 50%;
+}
+.divHijo2{
+    width: 50%;
+}
+.botones{
+    margin-left: 40%;
+    margin-top: 60px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+label{
+    color: white;
+}

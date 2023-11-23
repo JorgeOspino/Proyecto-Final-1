@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse Educecar</title>
+    <link rel="stylesheet" href="../css/paginaregistroestudiante.css">
+    <script src="../js/registro.js"></script>
+    <script src="../js/crudregistro.js"></script>
+</head>
+<body>
+    
+    <h1 class="container">EDUCECAR</h1>
+
+    <h1>REGISTRAR NUEVA CUENTA</h1><br><br>
+
+    <div class="contenedor">
+        <form>
+        <div class="columna">
+            <div class="campo">
+                <label for="nombre">Primer Nombre:</label>
+                <input id="nombre" type="text" pattern="[A-Za-z]+" title="Solo se permiten letras" required>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="correo electronico">Correo Electronico:</label>
+            <input id="correoElectronico" type="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="segundo nombre">Segundo Nombre:</label>
+                <input id="segundoNombre" type="text" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="direccion de residencia">Direccion de residencia:</label>
+                <input id="direccionResidencia" type="text" placeholder="Barrio, Calle, Carrera, Número"required>
+                </div>
+
+                <div class="campo">
+                    <label for="primer apellido">Primer Apellido:</label>
+                    <input id="primerApellido" type="text" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="fecha de nacimiento">Elija su fecha de nacimiento:</label>
+                    <input id="fechaNacimiento" type="date" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="segundo apellido">Segundo Apellido:</label>
+                        <input id="segundoApellido" type="text" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="estudiosrealizados">Estudios realizados:</label>
+                        <select id="estudiosRealizados" name="estudios">
+                            <option value="" disabled selected>Selecciona una opcion:</option>
+                        <option value="pregrado">Pregrado</option>
+                        <option value="posgrado">Posgrado</option>
+                        <option value="certificacion">Certificación</option>
+                        <option value="FormacionTecnica">Formacion Tecnica</option>
+                        <option value="doctorado">Doctorado</option>
+                        <option value="diploma">Diplomado</option>
+                        </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="tipo identificacion">Tipo de indentificacion:</label>
+                        <select id="tipoIdentificacion" name="">
+                        <option value="" disabled selected>Seleccione una opcion:</option>
+                        <option value="cedulaCiudadania">Cedula de ciudadania</option>
+                        <option value="tarjetaIdentidad">Tarjeta de identidad</option>
+                        <option value="cedulaExtranjeria">Cedula de extranjeria</option>
+                        <option value="pasaporte">Pasaporte</option>
+                        </select>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="nombre">Ingrese su usuario, por favor:</label>
+                            <input id="usuario" type="text" required>
+                            </div>
+
+                            <div class="campo">
+                                <label for="nombre">Numero de indentificacion:</label>
+                                <input id="numeroIdentificacion" type="number" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="nombre">Ingrese su contraseña:</label>
+                                <input id="contrasena" type="password" required> 
+                            
+                            </div>
+
+                               
+
+                </div><br>
+                <div class="botones">
+                <button onclick="Insertar()" style="background-color: yellow;">Guardar</button>&nbsp;&nbsp;
+                <button onclick="Consultar()" style="background-color: blueviolet;">CONSULTAR</button>&nbsp;&nbsp;
+                <button onclick="Actualizar()" style="background-color: aqua;" type="button">ACTUALIZAR</button>&nbsp;&nbsp;
+                <button onclick="Eliminar()" style="background-color: red;">ELIMINAR</button>&nbsp;&nbsp;
+                <button style="background-color: chocolate;" type="reset">Limpiar</button>
+                </div>
+        </form>
+    </div><br><br>
+    
+    <a href="../html/iniciodesesion.html"><button style="background-color: aqua;">BOTON TEMPORAL DE ENLACE</button></a>
+
+</body>
+</html>

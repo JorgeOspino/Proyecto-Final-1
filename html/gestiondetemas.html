@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Temas</title>
+    <link rel="stylesheet" href="../css/gestiondetemas.css">
+</head>
+<body>
+    
+    <h1 class="container">EDUCecar</h1>
+
+    <h1>GESTION DE TEMAS</h1>
+
+    <div class="div2">
+        <label for="">Codigo:</label>
+        <input type="number" id="codigoTema">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="">Nombre tematico:</label>
+        <input type="text" id="nombreTema">
+    </div><br><br>
+
+    <div class="div3">
+        <label for="monto">Precio:</label>
+        <input type="number" id="precioTema" name="monto" pattern="\d+(\.\d{2})?" 
+        placeholder="Monto en formato XX.XX"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="">Costo:</label>
+        <input type="number" id="costoTema" name="monto" pattern="\d+(\.\d{2})?" 
+        placeholder="Monto en formato XX.XX">
+    </div><br><br>
+
+    <div>
+        <label style="margin-left: 350px;" for="">Descripcion:</label>
+        <textarea name="" id="descripcionTema" cols="30" rows="6">Ingrese aqui su descripcion...</textarea>
+    </div>
+
+    <div class="div4">
+        <label for="">Asocia el tema a un curso:</label>
+        <select  id="selectCursosTemas">
+        </select>
+    </div>
+
+    <div class="botones">
+        <button onclick="guardarDatosTemas()" style="background-color: yellow;" type="button">GUARDAR</button>&nbsp;
+        <button onclick="actualizarRegistroTema()" style="background-color: aqua;">ACTUALIZAR</button>&nbsp;
+        <button onclick="consultarDatosTema()" style="background-color: blueviolet;">CONSULTAR</button>&nbsp;
+        <button onclick="eliminarRegistroTema()" style="background-color: red;">ELIMINAR</button>&nbsp;
+        <button onclick="limpiarCamposRegistroTemas()">LIMPIAR</button>
+        </div>
+
+        <div class="div6">
+
+        </div>
+        </div>
+        <script src="../js/crudtemas.js"></script>
+        <script src="../js/registrotemas.js"></script>
+        <script src="../js/conexionselecttemas.js"></script>
+
+</body>
+</html>

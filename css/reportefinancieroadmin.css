@@ -1,0 +1,44 @@
+body{
+    background-color: #0d9679;
+    margin: 0%;
+    font-family: arial, sans-serif;
+}
+nav{
+    background-color: #00a2ff;
+    color: white;
+    height: 50px;
+    text-align: center;
+}
+#ti{
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+.chart {
+    width: 1850px;
+    height: 600px;
+    border: 1px solid #ccc;
+}
+
+.line {
+    fill: none;
+    stroke-width: 2;
+}
+
+.line1 {
+    stroke: #3498db;
+}
+.point {
+    fill: red;
+    stroke-width: 4;
+}
+
+text {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.cost-labels text {
+    text-anchor: end;
+    
+}

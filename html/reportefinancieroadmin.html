@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reporte Financiero</title>
+<link rel="stylesheet" href="../css/reportefinancieroadmin.css">
+</head>
+<body>
+<nav>
+    <h1>EDUCecar</h1>
+</nav>
+<h1 id="ti">REPORTE DE VENTAS VS TIEMPO</h1>
+<svg class="chart">
+    <!-- Eje Y -->
+    <line x1="50" y1="20" x2="50" y2="380" stroke="#ccc" />
+    <!-- Eje X -->
+    <line x1="60" y1="380" x2="750" y2="380" stroke="#ccc" />
+    
+    <!-- Datos de las líneas -->
+    <polyline class="line line1" points="100,300 250,200 400,250 550,300,700,300,850,200,1500,200,1700,100,1900,250" />
+
+
+    <!-- Puntos -->
+    <circle class="point" cx="100" cy="300" r="12" />
+    <circle class="point" cx="250" cy="200" r="12" />
+    <circle class="point" cx="420" cy="255" r="12" />
+    <circle class="point" cx="565" cy="300" r="12" />
+    <circle class="point" cx="700" cy="300" r="12" />
+    <circle class="point" cx="850" cy="200" r="12" />
+    <circle class="point" cx="1000" cy="200" r="12" />
+    <circle class="point" cx="1150" cy="200" r="12" />
+    <circle class="point" cx="1330" cy="200" r="12" />
+    <circle class="point" cx="1470" cy="200" r="12" />
+    <circle class="point" cx="1620" cy="146" r="12" />
+    <circle class="point" cx="1780" cy="156" r="12" />
+    
+    <!-- Etiquetas de los costos -->
+    <g class="cost-labels">
+    <text x="45" y="305">300.000</text>
+    <text x="45" y="205">600.000</text>
+    <text x="45" y="155">900.000</text>
+    <text x="45" y="255">400.000</text>
+    </g>
+
+    <!-- Etiquetas de los meses -->
+    <text x="100" y="400">Enero</text>
+    <text x="250" y="400">Febrero</text>
+    <text x="400" y="400">Marzo</text>
+    <text x="550" y="400">Abril</text>
+    <text x="700" y="400">Mayo</text>
+    <text x="850" y="400">junio</text>
+    <text x="1000" y="400">julio</text>
+    <text x="1150" y="400">Agosto</text>
+    <text x="1300" y="400">Septiembre</text>
+    <text x="1450" y="400">Octubre</text>
+    <text x="1600" y="400">Noviembre</text>
+    <text x="1750" y="400">Diciembre</text>
+    </svg>
+</body>
+</html>

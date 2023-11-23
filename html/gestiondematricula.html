@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Matrícula</title>
+    <link rel="stylesheet" href="../css/gestiondematricula.css">
+</head>
+<body>
+
+    <h1 class="container">EDUCecar</h1>
+
+    <h1>Gestión de Matrícula</h1>
+
+    <form id="matriculaForm">
+        <label for="">Fecha:</label>
+        <input type="date" id="fecha" required><br>
+
+        <label for="">Tema:</label>
+        <select id="selectTemas" required>
+            <!-- Puedes añadir más opciones según tus necesidades -->
+        </select><br>
+
+        <label for="">Nombre completo:</label>
+        <input type="text" id="estudiante" required><br>
+
+        <label for="">Valor:</label>
+        <input type="text" id="valor" value="45,000" readonly><br>
+
+        <button type="button" onclick="validarMatricula()">GUARDAR MATRICULA</button>
+        <button type="button" onclick="consultarMatricula()">CONSULTAR</button>
+        <button type="button" onclick="actualizarMatricula()">ACTUALIZAR</button>
+        <button type="button" onclick="eliminarMatricula()">ELIMINAR</button>
+    </form>
+
+    <a href="../html/sistemadeevaluacion.html"><button>INICIAR CURSO</button></a>
+
+
+    <script src="../js/gestiondematricula.js"></script>
+    <script src="../js/conexionselectmatricula.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Disponibles</title>
+    <link rel="stylesheet" href="../css/cursosdisponiblesest.css">
+</head>
+<body>
+
+    <h1 class="container">EDUCecar</h1>
+
+    <h1>CURSOS DISPONIBLES</h1>
+
+    <label for="">Seleccione un curso:</label>
+    <select id="selectCursosTemas">
+        <option value="" disabled selected>Selecciona un curso:</option>
+    </select>
+
+    <button onclick="guardarDatosTemas()">GUARDAR CURSO SELECCIONADO</button>
+    <button onclick="consultarDatosTemas()">CONSULTAR</button>
+    <a href="../html/gestiondematricula.html"><button>CLICK AQUI PARA IR A MATRICULARTE</button></a>
+
+    <script src="../js/conexionselecttemas.js"></script>
+    <script src="../js/cursosdisponibles.js"></script>
+</body>
+</html>

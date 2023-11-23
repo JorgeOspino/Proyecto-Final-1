@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Videos</title>
+    <link rel="stylesheet" href="../css/gestiondevideos.css">
+</head>
+<body>
+    <div class="contenedor">
+    <h1 class="container">EDUCecar</h1>
+
+    <h1>GESTION DE VIDEOS</h1>
+
+    <div class="div2">
+        <label for="">Codigo:</label>
+        <input id="codigoVideo" type="number" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="">Nombre del video:</label>
+        <input id="nombreVideo" type="text" required>
+    </div><br><br>
+
+    <div class="div3">
+        <label for="">URL:</label>
+        <input id="urlVideo" type="url" required placeholder="Ingresa aqui la URL">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="">Idioma original:</label>
+        <select name="" id="idiomaOriginal" required>
+            <option value="" disabled selected>Selecciona un idioma:</option>
+            <option value="Español">Español</option>
+            <option value="Ingles">Inglés</option>
+            <option value="Frances">Francés</option>
+            <option value="Aleman">Alemán</option>
+            <option value="Chino (Mandarin)">Chino (Mandarín)</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Arabe">Árabe</option>
+            <option value="Ruso">Ruso</option>
+            <option value="Portugues">Portugués</option>
+            <option value="Japones">Japonés</option>
+        </select>
+    </div><br><br>
+
+    <label style="font-size: 20px;">Idiomas disponibles para escuchar:</label><br>
+    <input  type="checkbox" id="español" value="Español" >
+    <label for="español">Español</label>
+    <input  type="checkbox" id="ingles" value="Ingles">
+    <label for="ingles">Inglés</label><br>
+    <input  type="checkbox" id="frances" value="Frances">
+    <label for="frances">Frances</label>
+    <input  type="checkbox" id="aleman" value="Aleman">
+    <label for="aleman">Aleman</label><br>
+    <input  type="checkbox" id="chino" value="Chino">
+    <label for="chino">Chino</label>
+    <input  type="checkbox" id="hindi" value="Hindi">
+    <label for="hindi">Hindi</label><br>
+    <input  type="checkbox" id="arabe" value="Arabe">
+    <label for="arabe">Arabe</label>
+    <input  type="checkbox" id="ruso" value="Ruso">
+    <label for="ruso">Ruso</label><br>
+    <input  type="checkbox" id="portugues" value="Portugues">
+    <label for="portugues">Portugues</label>
+    <input  type="checkbox" id="japones" value="Japones">
+    <label for="japones">Japones</label><br><br><br><br>
+    
+    
+    <label style="font-size: 20px;">Subtitulos disponibles para escuchar:</label><br>
+    <input  type="checkbox" id="subEspañol" value="SubEspañol" >
+    <label for="subEspañol">SubEspañol</label>
+    <input  type="checkbox" id="subIngles" value="SubIngles">
+    <label for="subIngles">SubInglés</label><br>
+    <input  type="checkbox" id="subFrances" value="SubFrances">
+    <label for="subFrances">SubFrances</label>
+    <input  type="checkbox" id="subAleman" value="SubAleman">
+    <label for="subAleman">SubAleman</label><br>
+    <input  type="checkbox" id="subChino" value="SubChino">
+    <label for="chino">SubChino</label>
+    <input  type="checkbox" id="subHindi" value="SubHindi">
+    <label for="hindi">SubHindi</label><br>
+    <input  type="checkbox" id="subArabe" value="SubArabe">
+    <label for="arabe">SubArabe</label>
+    <input  type="checkbox" id="subRuso" value="SubRuso">
+    <label for="ruso">SubRuso</label><br>
+    <input  type="checkbox" id="subPortugues" value="SubPortugues">
+    <label for="portugues">SubPortugues</label>
+    <input  type="checkbox" id="subJapones" value="SubJapones">
+    <label for="japones">SubJapones</label><br><br>
+    
+
+    <label style="margin-left: 31%; font-size: 20px;" for="">Duracion del video:</label>
+    
+    <div class="div4">
+    <label for="horas">Horas:</label>
+    <input type="number" id="duracionHoras" name="horas" min="0" placeholder="0" required>
+    <label for="minutos">Minutos:</label>
+    <input type="number" id="duracionMinutos" name="minutos" min="0" max="59" placeholder="0" required>
+    <label for="segundos">Segundos:</label>
+    <input type="number" id="duracionSegundos" name="segundos" min="0" max="59" placeholder="0" required>
+    </div>
+
+    <div class="botones">
+        <button onclick="guardarDatos()" style="background-color: yellow;" type="button">GUARDAR</button>&nbsp;
+        <button onclick="actualizarRegistro()"  style="background-color: aqua;">ACTUALIZAR</button>&nbsp;
+        <button onclick="consultarDatos()" style="background-color: blueviolet;">CONSULTAR</button>&nbsp;
+        <button onclick="eliminarRegistro()"  style="background-color: red;">ELIMINAR</button>&nbsp;
+        <button onclick="limpiarCamposRegistro()">LIMPIAR</button>
+        <button onclick="actualizarIdiomasDisponibles()">Actualizar Idiomas Disponibles</button>
+    </div>
+        
+        <div class="div5">
+
+        </div>
+        </div>
+
+        <script src="../js/crudvideos.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Cursos</title>
+    <link rel="stylesheet" href="../css/gestiondecursos.css">
+</head>
+<body>
+    
+    <h1 class="container">EDUCecar</h1>
+
+    <h1>GESTION DE CURSOS</h1>
+
+<div class="div2">
+    <label for="">Codigo:</label>
+    <input id="codigoCurso" type="number">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="">Nombre del curso:</label>
+    <input id="nombreCurso" type="text">
+</div><br><br>
+
+<div class="div3">
+    <label for="">Videos Asociados:</label>
+    <select id="selectVideosCursos">
+        
+    </select>
+</div>
+
+
+<div class="botones">
+<button onclick="guardarDatosCursos()" style="background-color: yellow;" type="button">GUARDAR</button>&nbsp;
+<button onclick="actualizarRegistroCurso()"  style="background-color: aqua;">ACTUALIZAR</button>&nbsp;
+<button onclick="consultarDatosCurso()" style="background-color: blueviolet;">CONSULTAR</button>&nbsp;
+<button onclick="eliminarRegistroCurso()" style="background-color: red;">ELIMINAR</button>&nbsp;
+<button onclick="limpiarCamposRegistroCursos()">LIMPIAR</button>
+</div>
+
+<script src="../js/conexionselectcursos.js"></script>
+<script src="../js/crudcursos.js"></script>
+
+</body>
+</html>
