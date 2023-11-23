@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educecar Inicio de Sesion</title>
     <link rel="stylesheet" href="../css/iniciodesesion.css">
-    <script src="../js/iniciodesesion.js"></script>
+    <script src="../js/usuarios.js"></script>
+    <script src="../js/crudusuarios.js"></script>
 </head>
 <body>
     
@@ -18,15 +19,15 @@
         </div>
 
         <div class="contenedor2">
-            <form id="loginForm">
+           
                 <label for="usuario">Ingrese su usuario:</label><br>
-                <input type="text" id="usuario" name="usuario" required><br>
+                <input type="text" id="usuario"  required><br>
                 
                 <label for="contraseña">Ingrese su contraseña:</label><br>
-                <input type="password" id="contrasena" name="contraseña" required><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <button style="height: 30%" type="button" onclick="iniciarSesion()">Ingresar</button>
-            </form>
+                <input type="password" id="password"  required><br>
+                &
+                <button style="height: 30%" type="button" onclick="loguear()">Ingresar</button>
+            
         </div>
 
     </header>
